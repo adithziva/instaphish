@@ -1,6 +1,6 @@
-<h3> INSTAGRAM HOSTED PHISING </h3>
+<h3> INSTAGRAM HOSTED PHISING USING GITHUB</h3>
 
-* Showing how to host a Phishing site in Github and Store victim entered data to you're spreadsheet and get a submitted mail ⚡👀 hosting this you can use Android or pc<br>
+***Showing how to host a Phishing site in Github and Store victim entered data to you're spreadsheet and get a submitted mail ⚡👀 hosting this you can use Android or pc<br>***
 ``Example for hosted PhisingSite:`` <a href="https://instagramloginapp.ml">INSTAGRAMLOGINAPP.ML</a>
 <hr>
 
@@ -39,3 +39,7 @@ Ok, now the time comes we need to connect our phising site to get data and store
 Watch this video shows how to setup <a href="https://youtu.be/xICEFEJ3sGk">Connect Spreadsheet & Mail watch this video </a>. If you Watched the video and followed the step you will get a link. Copy the link go to
 you're GitHub repository that you uploaded the script open the ```index.html``` and change the ``50 Line url`` to your url and all set Ready to share with your vitcm 🙂🫡
 
+<hr>
+
+## WARNING : 
+***This tool is only for educational purpose. If you use this tool for other purposes except education we will not be responsible in such cases.***
