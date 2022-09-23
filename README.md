@@ -16,7 +16,7 @@
 #### STEP 2 (Get a domain)
 
 * You need a domain to host this web
-You can use free domain or either you can use any other donain service.
+You can use free domain or either you can use any other domain service.
 I'm using free domain from <a href="https://www.freenom.com/">FREENOM </a>
 After getting the domain you need to configure dns 
 <img src="dns.jpg"></h1>
@@ -37,7 +37,7 @@ Ohhh👀🖤 You are now hosted your webpage in public
 #### STEP 4 (Connect Spreadsheet and mail service)
 Ok, now the time comes we need to connect our phising site to get data and store in spreadsheet then notify by sending mail that the victim entered data to do that 
 Watch this video shows how to setup <a href="https://youtu.be/xICEFEJ3sGk">Connect Spreadsheet & Mail watch this video </a>. If you Watched the video and followed the step you will get a link. Copy the link go to
-you're GitHub repository that you uploaded the script open the ```index.html``` and change the ``50 Line url`` to your url and all set Ready to share with your vitcm 🙂🫡
+you're GitHub repository open the ```index.html``` and change the ``50 Line url`` to your url and all set Ready to share with your vitcm 🙂🫡
 
 <hr>
 
