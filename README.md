@@ -12,7 +12,7 @@
 
 <h1 align="center">
  इंडिया
-<img src="img/in2.gif" width="10%" ></h1>
+<img src="https://github.com/adithziva/adithziva/blob/main/img/in2.gif" width="10%" ></h1>
 
 
 
