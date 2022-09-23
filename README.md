@@ -14,7 +14,9 @@
  इंडिया
 <img src="https://github.com/adithziva/adithziva/blob/main/img/in2.gif" width="10%" ></h1>
 
-
+<p align="center">
+<a href="http://github.com/adithziva"><img title="IMG" src="https://github.com/adithziva/adithziva/blob/main/img/mr.gif" ></a>
+</p>
 
 
 
