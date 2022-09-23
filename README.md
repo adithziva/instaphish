@@ -22,7 +22,7 @@
 
 <h3> INSTAGRAM HOSTED PHISING USING GITHUB</h3>
 
-***Showing how to host a Phishing site in Github and Store victim entered data to you're spreadsheet and get a submitted mail ⚡👀 hosting this you can use Android or pc<br>***
+***how to host a Phishing site in Github and Store victim entered data to you're spreadsheet and get a submitted mail ⚡👀 For hosting you can use Android/pc<br>***
 
 ``Example Video:`` <a href="https://youtu.be/IyOgxOoJMTQ">SHOWS HOW IT'S WORK</a>
 
