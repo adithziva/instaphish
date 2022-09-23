@@ -41,5 +41,8 @@ you're GitHub repository open the ```index.html``` and change the ``50 Line url`
 
 <hr>
 
+## IF YOU GET ANY ERROR (Connect with me)
+<a href="https://instagram.com/mr_ziva_">INSTAGRAM</a>
+
 ## WARNING : 
 ***This tool is only for educational purpose. If you use this tool for other purposes except education we will not be responsible in such cases.***
